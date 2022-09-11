@@ -134,15 +134,52 @@ ul {
 .contact-link:focus {
     color: var(--style-color);
 }
+.contact-item {
+    display: flex;
+    
+}
+.mail::before {
+    display: inline-block;
+    align-self: baseline;
+    margin-right: 10px;
+
+    content: "";
+    background-image: url("..//images/envelope.svg");
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 12px;
+   
+    
+}
+.tel::before {
+    display: inline-block;
+    margin-right: 10px;
+
+    content: "";
+    background-image: url("../images/smartphone.svg");
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 16px;
+    background-size: contain;
+    
+}
 /* Main */
 /* hero-section */
 .hero-section.section {
-   padding-top: 200px;
-   padding-bottom: 200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 
-   background-color:var(--hero-section-bg-color);
-   text-align: center;
-
+    background-color: var(--hero-section-bg-color);
+    text-align: center;
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    background-image:
+    linear-gradient(to left , rgba(47,48,58,0.4),rgba(47,48,58,0.4)),
+    url("../images/hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .hero-titel {
     width: 696px;
@@ -190,6 +227,31 @@ ul {
 }
 .benefits-item {
     width: 270px;
+}
+.benefits-item::before {
+    display: block;
+    margin-bottom: 30px;
+    content: "";
+    height: 120px;
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    background-position: center;
+    
+}
+.details-item::before {
+    
+    background-image: url("../images/dеtails.svg");
+ 
+}
+.punctuality-item::before {
+    
+}
+.planning-item::before {
+  
+}
+.technology-item::before {
+    
 }
 .benefits-list > .benefits-item:not(:last-child){  
     margin-right: 30px;
@@ -273,6 +335,18 @@ ul {
     line-height: 1.8;   
     color: inherit;
 }
+/* client-section */
+.client-section {
+    text-align: center;
+}
+.client-titel {
+    margin-bottom: 50px;
+
+    color: var(--titel-link-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+}
 /* Footer - Студія - Портфоліо */
 .page-footer {
     padding-top: 60px;
@@ -314,6 +388,21 @@ ul {
 .address-link:hover,
 .address-link:focus {
     color: var(--address-map-color);
+}
+.footer-flex {
+    display: flex;
+    align-items: baseline;
+}
+
+.join-in {
+    margin-left: 156px;
+    padding-bottom: 20px;
+    
+    
+    text-transform: uppercase;
+    color: var(--address-map-color);
+    line-height: 1.14;
+    font-weight: 700;
 }
                                        /* Портфоліо */
 /* Main */
