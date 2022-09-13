@@ -395,6 +395,10 @@ ul {
 .footer-sp-logo{
     color: var(--footer-sp-logo-color);
 }
+.footer-flex {
+    display: flex;
+    
+}
 .address-item:not(:last-child) {
     margin-bottom: 10px;
 }
@@ -417,26 +421,26 @@ ul {
 .address-link:focus {
     color: var(--address-map-color);
 }
-.footer-flex {
-    display: flex;
-    align-items: baseline;
-}
 
+.footer-block {
+    margin-left: 95px;
+    margin-top: 12px;
+    
+}
 .join-in {
-    margin-left: 156px;
+    display: inline-block;
     margin-bottom: 20px;
-    
-    
+   
+    font-style: normal;
     text-transform: uppercase;
     color: var(--address-map-color);
     line-height: 1.14;
     font-weight: 700;
 }
 .footer-social {
-    display: flex;
-    
+    display: flex;  
 }
-.footer-social:not(:last-child){
+.footer-social li:not(:last-child){
    margin-right: 10px;
 }
 .footer-link {
@@ -446,6 +450,7 @@ ul {
     height: 44px;
     padding: 12px;
     fill: #FFFFFF;
+    background-color:rgba(255, 255, 255, 0.1);;
 }
 .footer-link:hover,
 .footer-link:focus {
