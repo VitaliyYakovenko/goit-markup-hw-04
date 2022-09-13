@@ -31,10 +31,19 @@
         </nav>
         <ul class="contact-list list">
             <li class="contact-item">
-                <a class="contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <li class="contact-item">
+                    <a class="contact-link link" href="mailto:info@devstudio.com">
+                    <svg class="icon-contact" width="16" height="12">
+                        <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com</a>
             </li>
             <li class="contact-item">
-                <a class="contact-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                <a class="contact-link link" href="tel:+380961111111">
+                <svg class="icon-contact" width="10" height="16">
+                    <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a>
             </li>
         </ul>
         </div>
@@ -178,11 +187,12 @@
         </section>              
     </main>
     <footer class="page-footer">
-        <div class="container">
-          <div class="footer-flex">
-        <a class="footer-logo link" href="./index.html" lang="en">Web<span class="footer-sp-logo">Studio</span></a>
-           <strong class="join-in">приєднуйтесь</strong>
-        </div>
+
+    <div class="container footer-flex">
+          <div>
+        <a class="footer-logo link" 
+        href="./index.html" lang="en">Web<span class="footer-sp-logo">Studio</span>
+        </a>
         <address class="address">
             <ul class="address-list list">
                 <li class="address-item">
@@ -196,7 +206,43 @@
                 </li>
             </ul>  
         </address>
+           </div>
+        <div class="footer-block">
+            <strong class="join-in">приєднуйтесь</strong>
+            <address>
+                <ul class="footer-social list">
+                    <li>
+                        <a class="footer-link link" href="https://www.instagram.com/">
+                            <svg width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-link link" href="https://twitter.com/">
+                            <svg width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-link link" href="https://www.facebook.com/">
+                            <svg width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-link link" href="https://www.linkedin.com/">
+                            <svg width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </address>
         </div>
+    </div>
     </footer>
 </body>
 </html>

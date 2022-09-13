@@ -122,48 +122,27 @@ ul {
     margin-right: 50px;
 }
 .contact-link {
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
+    align-items: center;
 
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;     
     color: inherit;
+    fill: #757575;
+}
+.icon-contact {
+   margin-right: 10px;
 }
 .contact-link:hover,
 .contact-link:focus {
     color: var(--style-color);
+    fill:var(--style-color)
 }
-.contact-item {
-    display: flex;
-    
-}
-.mail::before {
-    display: inline-block;
-    align-self: baseline;
-    margin-right: 10px;
 
-    content: "";
-    background-image: url("..//images/envelope.svg");
-    background-repeat: no-repeat;
-    width: 16px;
-    height: 12px;
-   
-    
-}
-.tel::before {
-    display: inline-block;
-    margin-right: 10px;
 
-    content: "";
-    background-image: url("../images/smartphone.svg");
-    background-repeat: no-repeat;
-    width: 10px;
-    height: 16px;
-    background-size: contain;
-    
-}
 /* Main */
 /* hero-section */
 .hero-section.section {
@@ -229,33 +208,18 @@ ul {
 .benefits-item {
     width: 270px;
 }
-.benefits-item::before {
-    display: block;
-    margin-bottom: 30px;
-    content: "";
-    height: 120px;
-    background-color: #F5F4FA;
-    background-repeat: no-repeat;
-    background-size: 70px 70px;
-    background-position: center;
-    
-}
-.details-item::before {
-    background-image: url();
- 
-}
-.punctuality-item::before {
-    background-image: url();
-}
-.planning-item::before {
-    background-image: url();
-}
-.technology-item::before {
-    background-image: url();
-}
-.benefits-list > .benefits-item:not(:last-child){  
+.benefits-block:not(:last-child) {
     margin-right: 30px;
 }
+.benefits-icon {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    
+    padding: 25px 100px;
+    background-color: #F5F4FA; 
+}
+
 .benefits-points {
     margin-bottom: 10px;
 
@@ -364,6 +328,7 @@ ul {
 .client-section {
     text-align: center;
 }
+
 .client-titel {
     margin-bottom: 50px;
 
@@ -371,6 +336,25 @@ ul {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
+}
+.client-list {
+    display: flex;
+    
+}
+.client-link {
+    display: inline-block;
+    padding: 16px 32px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8;
+}
+.client-list .client-item:not(:last-child) {
+    margin-right: 30px;
+}
+.client-link:hover,
+.client-link:focus {
+    fill: var(--style-color);
+    border: 1px solid var(--style-color);
 }
 /* Footer - Студія - Портфоліо */
 .page-footer {
