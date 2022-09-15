@@ -538,6 +538,7 @@ ul {
 }
 
 .border-portfolio {
+    padding-right: 24px;
     padding-left: 24px;
     padding-top: 20px;
     padding-bottom: 20px;
